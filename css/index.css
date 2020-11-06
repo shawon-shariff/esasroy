@@ -758,6 +758,9 @@ html{
 	    font-size: 25px;
 	    margin-top: 15px;
 	}
+	.left-pad{
+		display: none;
+	}
 	.top .custom-container .nav-link{
 		font-size: 13px;
 	}
@@ -776,12 +779,12 @@ html{
     	padding: 0px;
 	}
 	.nav2 .ul1 li .nav-link {
-    	font-size: 13px;
-    	margin-left: 0px;
-    	margin-right: 0px;
+	    font-size: 15px;
+	    margin-left: 0px;
+	    margin-right: 30px;
 	}
 	.nav2 .ul2 li .nav-link {
-		font-size: 13px;
+		font-size: 15px;
 	}
 	.top-gap{
 		margin-top:75px;
