@@ -10,9 +10,12 @@
 	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
 	<!-- jQuery CDN -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<!-- datepicker CDN -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" integrity="sha512-mSYUmp1HYZDFaVKK//63EcZq4iFWFjxSL+Z3T/aCt4IO9Cejm03q3NKKYN6pFQzY0SBOr8h+eCIAZHPXcpZaNw==" crossorigin="anonymous" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js" integrity="sha512-T/tUfKSV1bihCnd+MxKD0Hm1uBBroVYBOYSk1knyvQ9VyZJpc/ALb4P0r6ubwVPSGB2GvjeoMAJJImBG12TiaQ==" crossorigin="anonymous"></script>
 </head>
 <body>
-	<!-- menu for mobile -->
+	<!------------------------------------------------------menu for mobile -->
 	<div class="mob-nav">
 			<div class="row text-center">
 				<div class="col-3 menu-item">
@@ -25,30 +28,16 @@
 					<a href=""><i class="far fa-heart mob-icon-size"></i><br><p class="small font-weight-bold">Wishlist</p></a>
 				</div>
 				<div class="col-3 menu-item">
-					<a href=""><i class="fas fa-user-circle mob-icon-size"></i><br><p class="small font-weight-bold">Profile</p></a>
+					<a href="" data-toggle="modal" data-target="#loginModalForm"><i class="fas fa-user-circle mob-icon-size"></i><br><p class="small font-weight-bold">Account</p></a>
 				</div>
 			</div>
 		
 	</div>
-	<!-- menu for mobile -->
+	<!---------------------------------------------------------menu for mobile -->
+	
 	<section class="top" id="top">
-		<!------------------------------------------------------------------------------------------navbar 1 starts -->
-		<!-- <nav class="navbar navbar-expand-sm nav1 bg-nav" id="nav-shadow">
-			<a href="">
-				<p class="text-white font-weight-bold ml-5 logo-font">ESASROY</p>
-			</a>
-			<ul class="navbar-nav ml-auto ml-sm-0">
-				<form class="form-inline custom-margin">
-			      <input class="form-control" type="search" placeholder="Find Your Products...">
-			      <button class="btn" type="submit"><i class="fas fa-search"></i></button>
-		 	   </form>
-		 	   	<li id="cart-hide"><a href="" class="nav-link mr-xl-4 mr-lg-4 mr-md-4 mr-sm-2 mob-hide"><i class="fas fa-shopping-cart"></i>&nbsp;Cart</a></li>
-				<li><a href="" class="nav-link mr-xl-3 mr-lg-3 mr-md-3 mr-sm-2 mob-hide">Log&nbsp;In</a></li>
-				<li><a href="" class="nav-link mr-xl-5 mr-lg-4 mr-md-4 mr-sm-2 mob-hide">Sign&nbsp;Up</a></li>		
-			</ul>
-		</nav> -->
-		<!------------------------------------------------------------------------------------------navbar 1 ends -->
-		<!-- navbar 1 grid system -->
+		<!---------------------------------------------------------navbar 1 grid system -------->
+
 		<div class="custom-container nav1 bg-nav fixed-top" id="nav-shadow">
 			<div class="container-fluid">
 				<div class="row text-white">
@@ -65,15 +54,160 @@
 						<a href="#!" class="nav-link  mob-hide" id="cart-hide"><i class="fas fa-shopping-cart"></i>&nbsp;Cart</a>
 					</div>
 					<div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-1 mob-hide">
-						<a href="#!" class="nav-link  mob-hide">Log&nbsp;In</a>
+						<a href="" class="nav-link mob-hide" data-toggle="modal" data-target="#loginModalForm">Log&nbsp;In</a>
+	<!------------------------------------------------------login modal segment starts-->
+					<div class="modal fade" id="loginModalForm" tabindex="-1" role="dialog">
+					  	<div class="modal-dialog modal-dialog-centered" role="document">
+					    	<div class="modal-content">
+					      		<div class="modal-header">
+					        		<h5 class="modal-title">Login&nbsp;Form</h5>
+					        		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					          			<span aria-hidden="true">&times;</span>
+					        		</button>
+					      		</div>
+						      	<div class="modal-body">
+							     	<form>
+
+										<div class="form-group">
+										    <div class="col-sm-12">
+										      	<input type="text" class="form-control" id="inputPhone" placeholder="Phone Number">
+										    </div>
+										</div>
+
+										<div class="form-group">
+											<div class="col-sm-12">
+										    	<input type="password" class="form-control" id="inputPassword" placeholder="Password">
+										    </div>
+										</div>
+
+									</form>
+
+									<div class="API-BOX text-center mt-5 mb-3">
+										<p>Or Login With</p>
+										<a href="" class="fb-icon-color mr-2"><i class="fab fa-2x fa-facebook-square"></i></a>
+										<a href="" class="google-icon-color ml-2"><i class="fab fa-2x fa-google-plus-square"></i></a>
+									</div>
+									<div class="link">
+										<a href="" class="text-white small">Forgot Password?</a><br>
+										<p class="text-danger small">New Member? <a class="loginFormSignupLink" data-toggle="modal" data-target="#signupModalForm">Sign Up</a> here</p>
+									</div>
+							    </div>
+							    <div class="modal-footer">
+
+							        <button type="submit" class="btn btn-outline-light text-danger">Log&nbsp;In</button>
+							    </div>
+							</div>
+						</div>
+					</div>
+
+<!------------------------------------------------------login modal segment ends-->
 					</div>
 					<div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-1 mob-hide">
-						<a href="#!" class="nav-link  mob-hide">Sign&nbsp;Up</a>
+						<a href="#!" class="nav-link  mob-hide" data-toggle="modal" data-target="#signupModalForm">Sign&nbsp;Up</a>
+
+<!------------------------------------------------------Sign Up modal segment starts-->
+					<div class="modal fade" id="signupModalForm" tabindex="-1" role="dialog">
+					  	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+					    	<div class="modal-content">
+					      		<div class="modal-header">
+					        		<h5 class="modal-title">SignUp&nbsp;Form</h5>
+					        		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					          			<span aria-hidden="true">&times;</span>
+					        		</button>
+					      		</div>
+						      	<div class="modal-body">
+							     	<form>
+										<div class="row">
+		<!-- --------------------------left side---------------------------------->
+											<div class="col-sm-6">
+
+												<div class="form-group">
+												    <div class="col-sm-12">
+												      	<input type="text" class="form-control" id="inputPhone" placeholder="Phone Number">
+												    </div>
+												</div>
+
+												<div class="form-group">
+													<div class="col-sm-12">
+												    	<input type="password" class="form-control" id="inputPassword" placeholder="Password">
+												    </div>
+												</div>
+
+												<div class="form-group">
+													<div class="col-sm-12">
+												    	<input type="password" class="form-control" id="inputConfirmPassword" placeholder="Confirm Password">
+												    </div>
+												</div>
+
+											</div>	
+<!-- --------------------------left side end---------------------------------->
+
+
+<!-- --------------------------Right side---------------------------------->											
+											<div class="col-sm-6">
+
+												<div class="form-group">
+													<div class="col-sm-12 input-group input-append date" data-provide="datepicker">
+													    <input type="text" class="form-control" id="inputDate" placeholder="Enter Your Birthday">
+													    <div class="input-group-addon">
+													        <span class="glyphicon glyphicon-calender"></span>
+													    </div>
+													</div>
+												</div>
+
+												<div class="form-group">
+												    <div class="col-sm-12">
+												      	<input type="text" class="form-control" id="inputFullName" placeholder="Enter Your Full Name">
+												    </div>
+												</div>
+
+												<div class="form-group">
+												    <div class="col-sm-12">
+												    	<select class="form-control" id="inputGender">
+													      <option class="text-light bg-dark">Select Gender</option>
+													      <option class="text-light bg-dark">Male</option>
+													      <option class="text-light bg-dark">Female</option>
+													      <option class="text-light bg-dark">Other</option>
+													    </select>
+												    </div>
+												</div>
+											</div>
+
+		<!-- -----------------------right side end ---------------------->
+										</div>
+										<div class="col-sm-12">
+											<div class="form-check text-center">
+													<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+													<label class="form-check-label small checkbox-1-color" for="defaultCheck1">
+													    I agree to the terms and conditions
+													</label>
+												</div>
+
+												
+												<div class="form-group">
+													<div class="col-sm-12">
+														<input type="submit" class="btn btn-outline-light text-danger" value="SignUp">
+													</div>
+												</div>
+
+												<div class="API-BOX text-center mt-3 mb-3">
+													<p>Or Sign Up With</p>
+													<a href="" class="fb-icon-color mr-2"><i class="fab fa-2x fa-facebook-square"></i></a>
+													<a href="" class="google-icon-color ml-2"><i class="fab fa-2x fa-google-plus-square"></i></a>
+												</div>
+										</div>
+									</form>
+							    </div>
+							</div>
+						</div>
+					</div>
+
+<!------------------------------------------------------Sign Up modal segment ends-->	
 					</div>
 				</div>
 			</div>
 		</div>
-		<!-- navbar 1 grid system ends -->
+		<!---------------------------------------------------------------------navbar 1 grid system ends -->
 
 		<!------------------------------------------------------------------------------------------navbar 2 starts -->
 		<div class="container-fluid mt-2">
@@ -232,17 +366,18 @@
 				</div>
 				
 				 
-				<div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 right-pad">
+				<div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 right-pad">
 					<nav class="navbar navbar-expand-sm nav2">
 						<button class="navbar-toggler navbar-btn" id="sidebarCollapse">
 							<span><i class="fas fa-bars"></i></span>
 						</button>
 						
 							<ul class="navbar-nav ul1" id="sidebar">
+								<li><a href="index.html" class="nav-link">Home</a></li>
 								<li><a href="#shops" class="nav-link">All&nbsp;Shops</a></li>
-								<li><a href="" class="nav-link">Brands</a></li>
-								<li><a href="" class="nav-link">Flash&nbsp;Sell</a></li>
-								<li><a href="" class="nav-link">Customer&nbsp;Care</a></li>
+								<li><a href="#!" class="nav-link">Flash&nbsp;Sell</a></li>
+								<li><a href="#!" class="nav-link">Customer&nbsp;Care</a></li>
+								<li><a href="sellerLogin.html" class="nav-link">Sell&nbsp;On&nbsp;ESASROY</a></li>
 							</ul>
 							<ul class="navbar-nav ml-auto ul2 pr-xl-5 pr-lg-5 pr-md-0 pr-sm-0">
 								<li><a href="" class="nav-link W mob-hide"><i class="far fa-heart W-I"></i>&nbsp;&nbsp;Wishlist</a></li>
@@ -621,7 +756,7 @@
 
 	<!-- footer section starts here -->
 	<section class="page-footer">
-		<div class="container-xl container-lg container-fluid-md container-fluid-sm">
+		<div class="container-xl container-lg container-md container-fluid-sm">
 			<div class="row text-white">
 				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 mt-xl-5 mt-lg-5 mt-md-5 mt-sm-3 small-dev-padding">
 					<p class=" mt-2 text-white font-weight-bold" style="font-size: 30px; text-decoration: none;">ESASROY</p>
@@ -629,25 +764,25 @@
 				</div>
 				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 mt-xl-5 mt-lg-5 mt-md-5 mt-sm-4 small-dev-padding contact-margin-top">
 					<p class="footer-headings h5">Contact&nbsp;Us</p>
-					<p><i class="fas fa-phone-alt mr-3"></i>+1234567895<br>
+					<p class="small"><i class="fas fa-phone-alt mr-3"></i>+1234567895<br>
 						<span><i class="far fa-envelope mr-3"></i>esasroy@gmail.com</span></p>
 				</div>
 				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 mt-xl-5 mt-lg-5 mt-md-5 mt-sm-3 small-dev-padding">
 					<p class="footer-headings h5">Valuable&nbsp;Links</p>
 					<ul class="list-unstyled">
-						<li><a href="#!" class="text-white text-decoration-none">Services</a></li>
-						<li><a href="#!" class="text-white text-decoration-none">Support</a></li>
-						<li><a href="#!" class="text-white text-decoration-none">Customer&nbsp;Care</a></li>
-						<li><a href="#!" class="text-white text-decoration-none">Terms&nbsp;&&nbsp;Conditions</a></li>
-						<li><a href="#!" class="text-white text-decoration-none">Privacy&nbsp;Policy</a></li>
+						<li><a href="#!" class="text-white text-decoration-none small">Services</a></li>
+						<li><a href="#!" class="text-white text-decoration-none small">Support</a></li>
+						<li><a href="#!" class="text-white text-decoration-none small">Customer&nbsp;Care</a></li>
+						<li><a href="#!" class="text-white text-decoration-none small">Terms&nbsp;&&nbsp;Conditions</a></li>
+						<li><a href="#!" class="text-white text-decoration-none small">Privacy&nbsp;Policy</a></li>
 					</ul>
 				</div>
 				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 mt-xl-5 mt-lg-5 mt-md-5 mt-sm-3 small-dev-padding">
 					<p class="footer-headings h5">Information</p>
 					<ul class="list-unstyled m-auto">
-						<li><a href="#!" class="text-white text-decoration-none">Blogs</a></li>
-						<li><a href="#!" class="text-white text-decoration-none">Events</a></li>
-						<li><a href="#!" class="text-white text-decoration-none">Seminars</a></li>
+						<li><a href="#!" class="text-white text-decoration-none small">Blogs</a></li>
+						<li><a href="#!" class="text-white text-decoration-none small">Events</a></li>
+						<li><a href="#!" class="text-white text-decoration-none small">Seminars</a></li>
 					</ul>
 				</div>
 				
@@ -718,6 +853,12 @@ $(window).scroll(function(){
 });
 </script>
 
+<script type="text/javascript">
+	 // Data Picker Initialization
+	 $('.datepicker').datepicker({
+    	startDate: '-3d'
+	 });
+</script>
 
 
 <script src="js/owl.carousel.min.js"></script>

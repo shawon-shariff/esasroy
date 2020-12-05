@@ -9,6 +9,62 @@ body{
 html{
 	scroll-behavior: smooth;
 }
+/*---------------------------------------modal css starts here*/
+.modal-backdrop{
+	z-index: 999;
+}
+.modal-content{
+	background-color: #0C0D0D;
+	border:1px solid #fff;
+}
+.modal-header{
+	border:none;
+}
+.modal-body{
+	padding: 1rem 1rem 0rem 1rem !important;
+}
+.modal-footer{
+	border:none;
+	padding: 0rem .75rem .75rem .75rem !important;
+}
+
+.fb-icon-color{
+	color:#0F90F3;
+	text-decoration: none;
+}
+.fb-icon-color:hover{
+	color:none;
+}
+.google-icon-color{
+	color:#D34836;
+	text-decoration: none;
+}
+.checkbox-1-color{
+	color: #D34836;
+}
+.form-check{
+	padding-top: 1rem;
+}
+.google-icon-color:hover{
+	color:red;
+}
+.modal-footer .btn{
+	width: 100%;
+}
+.top .nav1 .form-group .btn{
+	width:100%;
+	margin-top:20px;
+}
+.loginFormSignupLink{
+	color:#fff;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+
+/*---------------------------------------modal css ends here*/
+
+
 /*-------------------------------------------mobile bottom menubar */
 .mob-nav{
 	width: 100%;
@@ -81,7 +137,7 @@ html{
 .top .nav1 .form-control:focus{
 	box-shadow: none;
 }
-.top .nav1 .btn:focus{
+.top .nav1 .form-inline .btn:focus{
 	box-shadow: none;
 }
 
@@ -92,10 +148,9 @@ html{
 }
 .top .nav1 .nav-link:hover{
 	color:#A60505;
-	border-bottom:1px solid #fff;
 }
 
-.top .nav1 .btn {
+.top .nav1 .form-inline .btn {
     margin-left: -65px;
     color: #A60505;
     margin-top: 20px;
@@ -405,7 +460,7 @@ html{
 	.top .nav1 .form-control {
 		margin-top: 7px;
 	}
-	.top .nav1 .btn {
+	.top .nav1 .form-inline .btn {
 	    margin-left: -42px;
 	    margin-top: 7px;
 	}
@@ -422,8 +477,8 @@ html{
    	}
    	#sidebar{
    		position: absolute;
-   		top:-200px;
-   		left:-250px;
+   		top:-250px;
+   		left:-280px;
    		transition: all 0.2s;
    		height: 100%;
    		width:200px;
@@ -554,8 +609,8 @@ html{
    	}
    	#sidebar{
    		position: absolute;
-   		top:-200px;
-   		left:-250px;
+   		top:-250px;
+   		left:-300px;
    		transition: all 0.2s;
    		height: 100%;
    		width:250px;
@@ -678,8 +733,8 @@ html{
    	}
    	#sidebar{
    		position: absolute;
-   		top:-200px;
-   		left:-250px;
+   		top:-250px;
+   		left:-300px;
    		transition: all 0.2s;
    		height: 100%;
    		width:300px;
@@ -746,10 +801,8 @@ html{
 	.page-footer .contact-margin-top .h5{
 		font-size: 17px !important;
 	}
-	
-	
-
 }
+
 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -757,6 +810,9 @@ html{
 	.top .logo-font {
 	    font-size: 25px;
 	    margin-top: 15px;
+	}
+	.left-pad{
+		display: none;
 	}
 	.top .custom-container .nav-link{
 		font-size: 13px;
@@ -773,15 +829,15 @@ html{
 		margin-top: 7px;
 	}
 	.top .nav2 {
-    	padding: 0px;
+    	padding: 5px 0px 5px 0px;
 	}
 	.nav2 .ul1 li .nav-link {
-    	font-size: 13px;
-    	margin-left: 0px;
-    	margin-right: 0px;
+	    font-size: 14px;
+	    margin-left: 2px;
+	    margin-right: 2px;
 	}
 	.nav2 .ul2 li .nav-link {
-		font-size: 13px;
+		font-size: 15px;
 	}
 	.top-gap{
 		margin-top:75px;
@@ -841,6 +897,15 @@ html{
 	.top {
 		padding-bottom: 50px;
 	}
+
+	.nav2 .ul1 li .nav-link {
+	    font-size: 14px;
+	    margin-left: 2px;
+	    margin-right: 2px;
+	}
+	.top .nav2 {
+	    padding: 5px 0px 5px 0px;
+	}
 	.top .dropdown-item {
 		padding: 7px 10px 7px 30px;
 	}
@@ -871,7 +936,7 @@ html{
 	    font-size: 33px;
 	    margin-top: 10px;
 	}
-	.top .nav1 .btn {
+	.top .nav1 .form-inline .btn {
     	margin-left: 485px;
     	margin-top: -38px;
 	}
@@ -883,6 +948,9 @@ html{
 	}
 	.top .carousel .img-size {
 		height: 412px;
+	}
+	.top .nav2 {
+	    padding: 6px 0px 4px 0px;
 	}
 	.shops {
 		padding-top: 75px;
