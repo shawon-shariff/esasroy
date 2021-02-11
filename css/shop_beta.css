@@ -1,0 +1,306 @@
+*{
+	margin:0; padding: 0; position: relative;
+	box-sizing: border-box;
+	font-family: 'Lato', sans-serif;
+}
+html{
+	scroll-behavior: smooth;
+}
+body{
+	background-color: #18191A;
+}
+.esasroy{
+	background-color: #18191A;
+	position: fixed;
+	bottom:3%;
+	left:0;
+	z-index: 98;
+}
+.up{
+	background-color: #18191A;
+	position: fixed;
+	bottom:5%;
+	right:3%;
+	font-size: 40px;
+	z-index: 9;
+	padding:0px 15px 0px 15px;
+}
+.top{
+    background-image: url('../images/Shop_Beta/pexels-tobi-674268.jpg');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:0px 0px 120px 0px;
+}
+.top-nav{
+    background-color: #18191A;
+}
+
+nav .nav-link{
+    color: darkcyan;
+    font-weight: bold;
+    margin:0px 10px 0px 10px;
+}
+
+.heading{
+	letter-spacing: 5px;
+}
+.heading::after{
+    content: "";
+    position: absolute;
+    width:40px;
+    height:5px;
+    background-color: #fff;
+    left:48%;
+    bottom:-20%;
+}
+/* collections */
+.collections{
+	background-color: #fff;
+}
+.collections .img-size-1{
+    width:100%;
+    height:600px;
+    margin-top:20px;
+    padding:50px 0px 50px 50px;
+    position: relative;
+}
+.collections .cus_border{
+    position: absolute;
+    border:10px solid #fff;
+    background-color: #000;
+    opacity: 0.7;
+    top: 12%;
+    left: 12%;
+    width: 60%;
+    height: 65%;
+}
+.collections .text{
+    color: aqua;
+    padding-top: 150px;
+    z-index: 99;
+    text-align: center;
+}
+.collections .img-size-2{
+    width:500px;
+    height:300px;
+    margin-top:10px;
+    margin-bottom:10px;
+    position: relative;
+}
+.collections .cus_border_2{
+    position: absolute;
+    border:10px solid #fff;
+    background-color: #000;
+    opacity: 0.7;
+    top: 7%;
+    left: 5%;
+    width: 60%;
+    height: 65%;
+}
+.collections .text_2{
+    color: aqua;
+    padding-top: 70px;
+    z-index: 99;
+    text-align: center;
+}
+
+/* featured products */
+.feature_products{
+    padding:50px 0px 50px 0px;
+}
+.hover-1 , .hover-2{
+	transition: linear 0.5s;
+	position: relative;
+	z-index: 9;
+}
+.hover-1:hover{
+	transform: translateY(-21%);
+	transition: linear 0.5s;
+}
+.hover-2:hover{
+	transform: translateY(-18%);
+	transition: linear 0.5s;
+}
+.feature_products .shade{
+	position: absolute;
+	background-color: #000;
+	top: 11%;
+    left: 12%;
+    width: 81%;
+    height: 74%;
+}
+.feature_products .text{
+	padding:330px 0px 0px 35px;
+}
+.feature_products .shade-2{
+	position: absolute;
+	background-color: #000;
+	top: -5%;
+    left: 12%;
+    width: 87%;
+    height: 100%;
+}
+.feature_products .text-2{
+	padding:200px 0px 0px 5px;
+}
+
+
+/* bestselling */
+.best_sell{
+	padding:50px 0px 50px 0px;
+	background-color: #dad6d6;
+}
+
+.best_sell .text-1{
+	padding:330px 0px 0px 10px;
+}
+.best_sell .shade-2{
+	position: absolute;
+	background-color: #dad6d6;
+	top: -5%;
+    left: 12%;
+    width: 87%;
+    height: 100%;
+}
+.best_sell .text-2{
+	padding:140px 0px 0px 5px;
+}
+.best_sell p{
+	background-color: #161616;
+	color: #dad6d6;
+}
+/* banner */
+.banner{
+	background-image: url('../images/Shop_Beta/pexels-sunyu-kim-3570479.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding:100px 0px 100px 0px;
+}
+
+/* blogs */
+.blogs{
+	padding: 50px 0px 50px 0px;
+	background-color: rgb(66, 61, 61);;
+}
+
+/* contact */
+.contact{
+	padding: 50px 0px 50px 0px;
+}
+.contact .input-group-rounded .input-group-field {
+    border-radius: 5000px 0 0 5000px;
+    padding:10px 25px 10px 25px;
+    border:none;
+    font-size: 12px;
+  }
+  
+.contact .input-group-rounded .input-group-button .btn {
+    border-radius: 0 5000px 5000px 0;
+    padding:10px 25px 10px 25px;
+  }
+.input-group-field:focus{
+    outline: none;
+    box-shadow: none;
+}
+.contact .tiny{
+    font-size:13px;
+    color: #f9fdff;
+}
+
+/* shop_footer */
+.shop_footer{
+	background-color: rgb(66, 61, 61);
+	padding:50px 0px 50px 0px;
+}
+
+
+/*-------------------------------------------footer--------------------------------------*/
+.page-footer{
+	width:100%;
+	height:auto;
+	/*background-color: #A20505;*/
+	background-color: #000;
+	padding-top:50px;
+	padding-bottom: 1px;
+}
+.footer-headings{
+	color: #A10505;
+}
+.separator{
+	width:100%;
+	height:2px;
+	background-color:yellow;
+	margin-top:15px;
+	margin-bottom:15px;
+}
+.page-footer .iconlist{
+	list-style-type: none;
+	display: inline-flex;
+	margin-left:41%;
+}
+.page-footer .iconlist li a{
+	margin-right:16px;
+}
+/*-------------------------------------------footer--------------------------------------*/
+
+/*Responsive*/
+@media only screen and (min-width:319px) and (max-width: 360px){
+	.top-bar .col-3{
+		padding-right:3px !important;
+		padding-left: 3px !important;
+		font-size:12px;
+	}
+	.page-footer .iconlist {
+	    margin-left: 20%;
+	}
+	.page-footer .contact-margin-top{
+		margin-top:13px;
+	}
+	.small-dev-padding{
+		padding: 10px 0px 14px 20px;
+	}
+}
+@media only screen and (min-width:361px) and (max-width: 429px){
+	.top-bar .col-3{
+		padding-right:5px !important;
+		padding-left: 5px !important;
+		font-size: 14px;
+	}
+	.page-footer .iconlist {
+	    margin-left: 24%;
+	}
+	.page-footer .contact-margin-top{
+		margin-top:13px;
+	}
+	.small-dev-padding{
+		padding-left: 40px;
+	}
+}
+@media only screen and (min-width:430px) and (max-width: 575px){
+	.page-footer .iconlist {
+	    margin-left: 31%;
+	}
+	.contact-margin-top{
+		margin-top: 14px;
+	}
+	.small-dev-padding{
+		padding-left: 60px;
+	}
+}
+@media only screen and (min-width:576px) and (max-width: 767px){
+	.page-footer .iconlist {
+	    margin-left: 36%;
+	}
+}
+@media only screen and (min-width:768px) and (max-width: 991px){
+	.page-footer .iconlist {
+		margin-left: 35%;
+	}
+}
+@media only screen and (min-width:992px) and (max-width: 1199px){
+	.page-footer .iconlist {
+	    margin-left: 39%;
+	}
+}

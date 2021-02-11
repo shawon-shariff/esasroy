@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Header</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/headerCSS.css">
+	<link rel="stylesheet" type="text/css" href="fonts/css/all.min.css">
+	<!-- jQuery CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+<section class="top" id="top">
+	<!---------------------------------------------------------navbar 1 grid system -------->
+
+		<div class="custom-container nav1 bg-nav fixed-top" id="nav-shadow">
+			<div class="container-fluid">
+				<div class="row text-white">
+					<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-4">
+						<p class="text-white font-weight-bold ml-xl-3 ml-lg-3 ml-md-3 ml-sm-1 logo-font">ESASROY</p>
+					</div>
+					<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-8">
+						<form class="form-inline">
+					      <input class="form-control" type="search" placeholder="Find Your Products...">
+					      <button class="btn" type="submit"><i class="fas fa-search"></i></button>
+				 	   </form>
+					</div>
+					<div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-1 mob-hide">
+						<a href="#!" class="nav-link  mob-hide" id="cart-hide"><i class="fas fa-shopping-cart"></i>&nbsp;Cart</a>
+					</div>
+					<div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-1 mob-hide">
+						<a href="" class="nav-link mob-hide" data-toggle="modal" data-target="#loginModalForm">Log&nbsp;In</a>
+	<!------------------------------------------------------login modal segment starts-->
+					<div class="modal fade" id="loginModalForm" tabindex="-1" role="dialog">
+					  	<div class="modal-dialog modal-dialog-centered" role="document">
+					    	<div class="modal-content">
+					      		<div class="modal-header">
+					        		<h5 class="modal-title">Login&nbsp;Form</h5>
+					        		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					          			<span aria-hidden="true">&times;</span>
+					        		</button>
+					      		</div>
+						      	<div class="modal-body">
+							     	<form>
+
+										<div class="form-group">
+										    <div class="col-sm-12">
+										      	<input type="text" class="form-control" id="inputPhone" placeholder="Phone Number">
+										    </div>
+										</div>
+
+										<div class="form-group">
+											<div class="col-sm-12">
+										    	<input type="password" class="form-control" id="inputPassword" placeholder="Password">
+										    </div>
+										</div>
+
+									</form>
+
+									<div class="API-BOX text-center mt-5 mb-3">
+										<p>Or Login With</p>
+										<a href="" class="fb-icon-color mr-2"><i class="fab fa-2x fa-facebook-square"></i></a>
+										<a href="" class="google-icon-color ml-2"><i class="fab fa-2x fa-google-plus-square"></i></a>
+									</div>
+									<div class="link">
+										<a href="" class="text-white small">Forgot Password?</a><br>
+										<p class="text-danger small">New Member? <a class="loginFormSignupLink" data-toggle="modal" data-target="#signupModalForm">Sign Up</a> here</p>
+									</div>
+							    </div>
+							    <div class="modal-footer">
+
+							        <button type="submit" class="btn btn-outline-light text-danger">Log&nbsp;In</button>
+							    </div>
+							</div>
+						</div>
+					</div>
+
+<!------------------------------------------------------login modal segment ends-->
+					</div>
+					<div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-1 mob-hide">
+						<a href="#!" class="nav-link  mob-hide" data-toggle="modal" data-target="#signupModalForm">Sign&nbsp;Up</a>
+
+<!------------------------------------------------------Sign Up modal segment starts-->
+					<div class="modal fade" id="signupModalForm" tabindex="-1" role="dialog">
+					  	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+					    	<div class="modal-content">
+					      		<div class="modal-header">
+					        		<h5 class="modal-title">SignUp&nbsp;Form</h5>
+					        		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					          			<span aria-hidden="true">&times;</span>
+					        		</button>
+					      		</div>
+						      	<div class="modal-body">
+							     	<form>
+										<div class="row">
+		<!-- --------------------------left side---------------------------------->
+											<div class="col-sm-6">
+
+												<div class="form-group">
+												    <div class="col-sm-12">
+												      	<input type="text" class="form-control" id="inputPhone" placeholder="Phone Number">
+												    </div>
+												</div>
+
+												<div class="form-group">
+													<div class="col-sm-12">
+												    	<input type="password" class="form-control" id="inputPassword" placeholder="Password">
+												    </div>
+												</div>
+
+												<div class="form-group">
+													<div class="col-sm-12">
+												    	<input type="password" class="form-control" id="inputConfirmPassword" placeholder="Confirm Password">
+												    </div>
+												</div>
+
+											</div>	
+<!-- --------------------------left side end---------------------------------->
+
+
+<!-- --------------------------Right side start---------------------------------->											
+											<div class="col-sm-6">
+
+												<div class="form-group">
+													<div class="col-sm-12 input-group input-append date" data-provide="datepicker">
+													    <input type="text" class="form-control" id="inputDate" placeholder="Enter Your Birthday">
+													    <div class="input-group-addon">
+													        <span class="glyphicon glyphicon-calender"></span>
+													    </div>
+													</div>
+												</div>
+
+												<div class="form-group">
+												    <div class="col-sm-12">
+												      	<input type="text" class="form-control" id="inputFullName" placeholder="Enter Your Full Name">
+												    </div>
+												</div>
+
+												<div class="form-group">
+												    <div class="col-sm-12">
+												    	<select class="form-control" id="inputGender">
+													      <option class="text-light bg-dark">Select Gender</option>
+													      <option class="text-light bg-dark">Male</option>
+													      <option class="text-light bg-dark">Female</option>
+													      <option class="text-light bg-dark">Other</option>
+													    </select>
+												    </div>
+												</div>
+											</div>
+
+<!-- -----------------------right side end ---------------------->
+										</div>
+										<div class="col-sm-12">
+											<div class="form-check text-center">
+													<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+													<label class="form-check-label small checkbox-1-color" for="defaultCheck1">
+													    I agree to the terms and conditions
+													</label>
+												</div>
+
+												
+												<div class="form-group">
+													<div class="col-sm-12">
+														<input type="submit" class="btn btn-outline-light text-danger" value="SignUp">
+													</div>
+												</div>
+
+												<div class="API-BOX text-center mt-3 mb-3">
+													<p>Or Sign Up With</p>
+													<a href="" class="fb-icon-color mr-2"><i class="fab fa-2x fa-facebook-square"></i></a>
+													<a href="" class="google-icon-color ml-2"><i class="fab fa-2x fa-google-plus-square"></i></a>
+												</div>
+										</div>
+									</form>
+							    </div>
+							</div>
+						</div>
+					</div>
+
+<!------------------------------------------------------Sign Up modal segment ends-->	
+					</div>
+				</div>
+			</div>
+		</div>
+		<!---------------------------------------------------------------------navbar 1 grid system ends -->
+</section>
+
+
+<script type="text/javascript">
+	if ( $(window).scrollTop() > 50){
+		$('#nav-shadow').css('padding-top','12px');
+    	$('#nav-shadow').css('padding-bottom','12px');
+        $('#nav-shadow').css('transition','all 0.2s');
+    }
+	if( $(window).scrollTop() > 450 ){
+        $('#nav-shadow').css('box-shadow', '2px -6px 15px #fff');
+    }
+    
+
+$(window).scroll(function(){
+	if ($(window).scrollTop() > 50){
+		$('#nav-shadow').css('padding-top','12px');
+		$('#nav-shadow').css('padding-bottom','12px');
+        $('#nav-shadow').css('transition','all 0.2s');	
+	}
+	else{
+		$('#nav-shadow').css('padding-top','0px');
+		$('#nav-shadow').css('padding-bottom','0px');
+        $('#nav-shadow').css('transition','all 0.2s');
+	}
+    if( $(window).scrollTop() > 450 ){
+        $('#nav-shadow').css('box-shadow', '2px -6px 15px #fff');
+        
+    } else {
+        $('#nav-shadow').css('box-shadow', 'none');
+    }
+
+});
+</script>
+<script type="text/javascript">
+	if( $(window).scrollTop() > 70 ){
+        $('#cart-hide').css('visibility', 'visible');
+    }
+
+$(window).scroll(function(){
+    if( $(window).scrollTop() > 70 ){
+        $('#cart-hide').css('visibility', 'visible');
+    } else {
+        $('#cart-hide').css('visibility', 'hidden');
+    }
+});
+</script>
+<script src="fonts/js/all.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<!-- bootstrap js CDN -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
