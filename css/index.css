@@ -377,16 +377,21 @@ html{
 }
 .products .card{
 	background-color: #000;
+	margin:15px 0px 15px 0px;
+}
+.products img{
+	transition: all 0.5s; 
 }
 .products .card:hover{
-	border:1px solid #f71111;
+	border:1px solid #fdf9f9;
+	transition: all 0.5s; 
 }
 .products .card-footer p{
 	margin-top:-15px;
 }
 
 .products .card:hover img{
-	transform: scale(1.1);
+	transform: scale(1.2);
 	transition: all 0.5s; 
 }
 /*------------------------------------------------------------------------------------------product ends here*/

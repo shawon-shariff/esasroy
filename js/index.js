@@ -153,7 +153,7 @@ $(document).ready(function(){
     margin:10,
     nav:true,
     autoplay:true,
-    autoplaySpeed:8000,
+    autoplaySpeed:12000,
     responsive:{
         0:{
             items:2
