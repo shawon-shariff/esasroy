@@ -14,6 +14,62 @@ html{
 	scroll-behavior: smooth;
 }
 
+/*---------------------------------------modal css starts here*/
+.modal-backdrop{
+	z-index: 999;
+}
+.modal-content{
+	background-color: #0C0D0D;
+	border:1px solid #fff;
+}
+.modal-header{
+	border:none;
+}
+.modal-body{
+	padding: 1rem 1rem 0rem 1rem !important;
+}
+.modal-footer{
+	border:none;
+	padding: 0rem .75rem .75rem .75rem !important;
+}
+
+.fb-icon-color{
+	color:#0F90F3;
+	text-decoration: none;
+}
+.fb-icon-color:hover{
+	color:none;
+}
+.google-icon-color{
+	color:#D34836;
+	text-decoration: none;
+}
+.checkbox-1-color{
+	color: #D34836;
+}
+.form-check{
+	padding-top: 1rem;
+}
+.google-icon-color:hover{
+	color:red;
+}
+.modal-footer .btn{
+	width: 100%;
+}
+.top .nav1 .form-group .btn{
+	width:100%;
+	margin-top:20px;
+}
+.loginFormSignupLink{
+	color:#fff;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+
+/*---------------------------------------modal css ends here*/
+
+
 /*-------------------------------------------mobile bottom menubar */
 .mob-nav{
 	width: 100%;
@@ -47,6 +103,240 @@ html{
 }
 
 /*---------------------------------------------mobile bottom menubar ends */
+.navbar{
+	margin:0;padding:0;
+}
+
+.navbar-toggler{
+	background-color: black;
+	color: white;
+}
+/*------------------------------------------------------------------------------------------top section starts here*/
+.top-gap{
+	margin-top:100px;
+}
+.top .logo-font{
+	font-size: 45px;
+	text-decoration: none;
+}
+.top .nav1 .navbar-brand{
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+}
+
+.top .bg-nav{
+	background-color: #000;
+	
+}
+.top .nav1 .form-control{
+	width:100%;
+	color:#fff;
+	margin-top: 15px;
+	border:none;
+	background-color: transparent!important;
+	border-bottom:1px solid #A60505;
+}
+.top .nav1 .form-control:focus{
+	box-shadow: none;
+}
+.top .nav1 .form-inline .btn:focus{
+	box-shadow: none;
+}
+
+.top .nav1 .nav-link{
+	color:#fff;
+	font-weight: 500;
+	padding: 25px 0px 0px 0px;
+}
+.top .nav1 .nav-link:hover{
+	color:#A60505;
+}
+
+.top .nav1 .form-inline .btn {
+    margin-left: -65px;
+    color: #A60505;
+    margin-top: 20px;
+}
+.nav-add .container-fluid{
+	width:95%;
+}
+.nav-add .container-fluid .right-pad{
+	padding-right:0;
+}
+#cart-hide{
+	visibility: hidden;
+}
+/*------------------------------------------------------------------------------------------categories level 1 starts here*/
+.nav-add .container-fluid .custom-bg{
+	/*background-color: #A60505;*/
+	/*yellow-color : #E99E12*/
+	background: linear-gradient(to right ,red,red,#A60505,#A60505);
+	font-size: 20px;
+	cursor: pointer;
+}
+.nav-add .custom-bg:hover{
+	background: linear-gradient(to right ,#A60505,#A60505,red,red);
+}
+/*-------------------------------------------------------------------category A*/
+.nav-add .cate-1-list{
+	text-align: left;
+	margin: 10px -15px 0px -15px;
+	background-color: #000;
+}
+.nav-add .dropdown-menu{
+	min-width: 18rem !important;
+    margin: 0rem 0 0 0.9rem !important;
+	transform: translate3d(0px, 29px, 0px) !important;
+	background-color: transparent !important;
+	border: none !important;
+}
+.nav-add .dropdown-item{
+	color:#fff;
+	font-size:13px;
+	border-bottom:2px solid #000;
+	padding:10px 10px 10px 30px;	
+	font-weight: 500;
+	background-color: #111113;
+}
+.cate-1-list li{
+	position: relative;
+}
+.cate-1-list a:hover{
+	color:red;
+	border-left:5px solid #A60505;
+	/*margin-left:5px;*/
+	transition: all 0.2s;
+}
+.cate-2-list a:hover{
+	color:red;
+	border-left:5px solid #A60505;
+	/*margin-left:5px;*/
+	transition: all 0.2s;
+}
+
+.cate-3-list a:hover{
+	color:red;
+	border-left:5px solid #A60505;
+	/*margin-left:5px;*/
+	transition: all 0.2s;
+}
+/*---------------------------------------------------------------------category B*/
+.cate-2-list{
+	position: absolute;
+	top:0px;
+	right:-270px;
+	z-index: 999;
+	opacity: 0;
+	visibility: hidden;
+	background-color: transparent;
+	height: 438px;
+	min-width: 250px;
+	transition: all 0.5s;
+}
+.cate-1-list li:hover >.cate-2-list{
+	right:-248px;
+	opacity: 1;
+	visibility: visible;
+}
+
+.cate-1-list li:hover >#B2{margin-top: -41px;}
+.cate-1-list li:hover >#B3{margin-top: -82px;}
+.cate-1-list li:hover >#B4{margin-top: -123px;}
+.cate-1-list li:hover >#B5{margin-top: -164px;}
+.cate-1-list li:hover >#B6{margin-top: -205px;}
+.cate-1-list li:hover >#B7{margin-top: -246px;}
+.cate-1-list li:hover >#B8{margin-top: -287px;}
+.cate-1-list li:hover >#B9{margin-top: -328px;}
+.cate-1-list li:hover >#B10{margin-top: -369px;}
+
+/*---------------------------------------------------------------------category C*/
+.cate-2-list li{
+	position: relative;
+}
+.cate-3-list{
+	position: absolute;
+	position: absolute;
+	top:0px;
+	right:-270px;
+	z-index: 999;
+	opacity: 0;
+	visibility: hidden;
+	background-color: transparent;
+	height: 438px;
+	min-width: 250px;
+	transition: all 0.5s;
+}
+.cate-2-list li:hover >.cate-3-list{
+	right:-248px;
+	opacity: 1;
+	visibility: visible;
+}
+
+
+.cate-2-list li:hover >#C2{margin-top: -41px;}
+.cate-2-list li:hover >#C3{margin-top: -82px;}
+.cate-2-list li:hover >#C4{margin-top: -123px;}
+.cate-2-list li:hover >#C5{margin-top: -164px;}
+.cate-2-list li:hover >#C6{margin-top: -205px;}
+.cate-2-list li:hover >#C7{margin-top: -246px;}
+.cate-2-list li:hover >#C8{margin-top: -287px;}
+.cate-2-list li:hover >#C9{margin-top: -328px;}
+.cate-2-list li:hover >#C10{margin-top: -369px;}
+
+/*------------------------------------------------------------------------------------------navigation 2 starts here*/
+.nav-add .nav2{
+	background-color: #fff;
+	padding:5px;
+	margin:0;
+}
+.nav2 .ul1 li .nav-link{
+	color: #000;
+	font-weight: 700;
+	font-size: 15px;
+	margin-left:10px;
+	margin-right: 10px;
+}
+.nav2 .ul2 li .nav-link{
+	font-size: 15px;
+	margin-left:10px;
+	color:#A60505;
+	font-weight: 700;
+}
+.nav2 .ul1 li .nav-link:hover{
+	color: #A60505;
+}
+
+.W-I{
+	color:#000;
+}
+.W:hover .W-I{
+	color: #A60505;
+}
+.C-I{
+	color:#000;
+}
+.C:hover .C-I{
+	color: #A60505;
+}
+
+/*------------------------------------------------------------------------------------------carousel starts here*/
+.top .carousel .img-size{
+	width:100%;
+	height:442px;
+}
+.top .carousel-indicators li{
+	width:10px;
+	height: 10px;
+	border-radius: 50%;
+}
+.top .carousel-indicators .active{
+	background-color: #A60505;
+}
+
+
+
+/*------------------------------------------------------------------------------------------top section ends here*/
+
 /*---------------------------------------Product viewer all plugin css here*/
 .exzoom .exzoom_img_box {
     background: #171111 !important;
@@ -178,9 +468,6 @@ html{
     margin-left: -65px;
     color: #A60505;
     margin-top: 20px;
-}
-.top{
-	padding-bottom:100px;
 }
 #cart-hide{
 	visibility: hidden;
